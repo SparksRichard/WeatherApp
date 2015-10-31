@@ -1,0 +1,32 @@
+<div class = 'weatherForecast' ng-repeat='weather in weatherForecastManagerEvery3Hours'>
+	<div class='col-md-2 pull-left'>
+		<div class = 'dateClass'>
+			{{weather.date}}
+		</div>
+		<div class='timeClass'>
+			{{weather.time}}
+		</div>
+	</div>
+	<div class='col-md-4 pull-left'>
+		{{weather.temperature}}
+	</div>
+	<div class='col-md-4 pull-right'>
+		<div class='forecastClass'>
+			{{weather.forecast}}
+		</div>
+		<div class='forecastDescClass'>
+			{{weather.forecastDesc}}
+		</div>
+	</div>
+	<div class='col-md-2 pull-right'>
+		<div>
+			{{weather.wind}}
+		</div>
+		<div>
+			{{weather.humidity}}
+		</div>
+		<div>
+			{{weather.clouds}}
+		</div>
+	</div>
+</div>
