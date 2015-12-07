@@ -8,7 +8,7 @@ angular.module('weatherApp.services',[])
 			url: 'http://127.0.0.1:8080/getData',
 		}).then(function(response){
 			console.log(response);
-			weatherObject = response.data.json;
+			weatherObject = response.data.data;
 		})}
 		getDataFromMysql();
 		return{

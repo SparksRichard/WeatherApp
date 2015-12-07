@@ -80,10 +80,40 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
-  .weatherForecast{
+    .weatherForecast{
     overflow: auto;
-   border-size:1px;
-border-style:solid;
-border-bottom-color:blue;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:black;
+    border-right-size:5px;
+    border-right-style: double;
+    border-right-color: black;
   }
+  .dateAndTimeClass{
+    padding-top: 7px;
+    font-size: 17px;
+    color: maroon;
+  }
+
+  .temperatureClass{
+    padding-top: 10px;
+    font-size:28px;
+    color: darkblue;
+  }
+  .forecastAndDescriptionClass{
+
+  }
+  .forecastClass{
+    font-size: 26px;
+    color: darkgreen;
+  }
+  .forecastDescClass{
+    font-size: 16px;
+    color:black;
+  }
+  .wiHuClClass{
+    background-color: gray;
+    color:lightblue;
+  }
+
 }

@@ -22,7 +22,7 @@ public class componentListener implements ApplicationListener<ContextRefreshedEv
             HttpRequestWeather httpRequestWeather = new HttpRequestWeather();
             weatherDAO.save(httpRequestWeather.getWeatherData("http://api.openweathermap.org/data/2.5/forecast/city?id=4145381&APPID=6b5a2f0d03f24f94748b13fa796d5a0c"));
         }catch (Exception e){
-
+            System.out.println("Request Failed  "+e);
         }
     }
 }

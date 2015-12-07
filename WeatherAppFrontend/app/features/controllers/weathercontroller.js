@@ -8,8 +8,10 @@ angular.module('weatherApp.controllers',[])
 	$scope.$watch(function(){
 		return weatherservice.getWeather();
 	}, function(newVal, oldVal){
-		if(typeof newVal !== 'undefined'){
+		console.log(newVal);
+		if(newVal != undefined){
 			$scope.rawData = newVal;
+			console.log(newVal);
 			$scope.parsedData = JSON.parse($scope.rawData);
 			buildWeatherForecasts();
 			console.log($scope.parsedData);

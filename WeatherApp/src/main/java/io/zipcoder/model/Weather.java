@@ -22,11 +22,11 @@ public class Weather {
     private String url;
 
     @NotNull
-    private String json;
+    private String data;
 
     public Weather(String url0, String data0){
         this.url = url0;
-        this.json = data0;
+        this.data = data0;
     }
 
     public Weather(){ };
@@ -47,11 +47,10 @@ public class Weather {
         this.url = url;
     }
 
-    public String getJson() {
-        return json;
+    public String getData() {
+        return data;
     }
-
-    public void setJson(String json) {
-        this.json = json;
+    public void setData(String data) {
+        this.data = data;
     }
 }

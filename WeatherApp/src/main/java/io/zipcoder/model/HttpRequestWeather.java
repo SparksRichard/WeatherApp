@@ -1,6 +1,5 @@
 package io.zipcoder.model;
 
-import com.oracle.javafx.jmx.json.JSONReader;
 import org.springframework.boot.json.JsonParser;
 
 import java.io.BufferedReader;
@@ -14,7 +13,6 @@ import java.net.URLConnection;
  * Created by rsparks on 10/26/15.
  */
 public class HttpRequestWeather {
-
 
 
     public Weather getWeatherData(String url0) {
