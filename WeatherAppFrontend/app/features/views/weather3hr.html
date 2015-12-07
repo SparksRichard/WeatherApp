@@ -1,5 +1,5 @@
-<div class = 'weatherForecast' ng-repeat='weather in weatherForecastManagerEvery3Hours'>
-	<div class='col-md-2 pull-left'>
+<div class='weatherForecast' ng-repeat='weather in weatherForecastManagerEvery3Hours'>
+	<div class='col-md-2 pull-left dateAndTimeClass'>
 		<div class = 'dateClass'>
 			{{weather.date}}
 		</div>
@@ -7,26 +7,26 @@
 			{{weather.time}}
 		</div>
 	</div>
-	<div class='col-md-4 pull-left'>
-		{{weather.temperature}}
+	<div class='col-md-2 pull-left temperatureClass'>
+		{{weather.temperature}}°
 	</div>
-	<div class='col-md-4 pull-right'>
+	<div class='col-md-4 pull-right wiHuClClass'>
+		<div class = 'windClass'>
+			Wind: {{weather.wind}} MPH
+		</div class='humidityClass'>
+		<div>
+			Humidity: {{weather.humidity}}%
+		</div class='cloudsClass'>
+		<div>
+			Clouds: {{weather.clouds}}%
+		</div>
+	</div>
+	<div class='col-md-4 pull-right forecastAndDescriptionClass'>
 		<div class='forecastClass'>
 			{{weather.forecast}}
 		</div>
 		<div class='forecastDescClass'>
-			{{weather.forecastDesc}}
-		</div>
-	</div class='WiHuClClass'>
-	<div class='col-md-2 pull-right'>
-		<div>
-			{{weather.wind}}
-		</div>
-		<div>
-			{{weather.humidity}}
-		</div>
-		<div>
-			{{weather.clouds}}
+			- {{weather.forecastDesc}}
 		</div>
 	</div>
 </div>

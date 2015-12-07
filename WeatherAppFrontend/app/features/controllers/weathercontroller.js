@@ -40,7 +40,7 @@ angular.module('weatherApp.controllers',[])
 				weatherData[wf].weather[0].main,
 				weatherData[wf].weather[0].description,
 				weatherData[wf].clouds.all,
-				weatherData[wf].wind.speed,
+				Math.round(weatherData[wf].wind.speed*2.23694*10)/10,
 				weatherData[wf].dt_txt.substring(5,10),
 				weatherData[wf].dt_txt.substring(11)
 			)
